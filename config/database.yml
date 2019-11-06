@@ -16,7 +16,7 @@ default: &default
   username: pipstat
   password: '<%=Rails.application.credentials.db_dev_pwd%>'
   host: 120.92.140.143
-  socket: /data1/mysql5/data/mysql.sock
+#  socket: /data1/mysql5/data/mysql.sock
   port: 3306
 
 # Warning: The database defined as "test" will be erased and
@@ -36,19 +36,15 @@ production:
   database: pipstat
 
 #平台基本数据
-meta_development:
+mete_db:
   <<: *default
-  database: metadata
-
-meta_production:
-  <<: *default
-  database: metadata
+  database: metedata
 
 #认证库
-meta_development:
+account_db:
   <<: *default
-  database: metadata
-
-meta_production:
-  <<: *default
-  database: metadata
+  username: pipcount
+  host: 120.92.137.73
+  password: '<%=Rails.application.credentials.db_account_pwd%>'
+  database: account
+  port: 7002

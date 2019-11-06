@@ -7,6 +7,7 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+import 'css/_common'
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -17,3 +18,16 @@ require("channels")
 
 const images = require.context('../images', true)
 const imagePath = (name) => images(name, true)
+console.log("alskdjfascccccccccckdjf")
+console.log("是热加载么？")
+console.log("是的？")
+console.log("没有变化？")
+console.log("真没有变化么？写错了吧？")
+console.log("妈的，真写错了")
+console.log("full reload?")
+console.log("yes is full reload")
+
+
+
+
+

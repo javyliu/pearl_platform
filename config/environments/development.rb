@@ -61,4 +61,5 @@ Rails.application.configure do
   # config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   # FileUpdateChecker will detect by polling the change of the file.
   config.file_watcher = ActiveSupport::FileUpdateChecker
+
 end

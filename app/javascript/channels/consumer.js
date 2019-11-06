@@ -4,3 +4,4 @@
 import { createConsumer } from "@rails/actioncable"
 
 export default createConsumer()
+console.log("是热加载么？")
