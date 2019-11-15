@@ -13,9 +13,10 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: pipstat
+  username: root
   password: '<%=Rails.application.credentials.db_dev_pwd%>'
-  host: 120.92.140.143
+  #host: 120.92.140.143
+  host: 192.168.30.33
 #  socket: /data1/mysql5/data/mysql.sock
   port: 3306
 
@@ -23,22 +24,40 @@ default: &default
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  <<: *default
-  database: data_web_test
+  pipstat_db:
+    <<: *default
+    database: pipstat_test
+  metedata_db:
+    <<: *default
+    database: metedata_test
+    migrations_paths: db/metedata_migrate
 
 #平台数据
 development:
-  <<: *default
-  database: pipstat
+  pipstat_db:
+    <<: *default
+    database: pipstat
+  metedata_db:
+    <<: *default
+    database: metedata
+    migrations_paths: db/metedata_migrate
 
 production:
-  <<: *default
-  database: pipstat
+  pipstat_db:
+    <<: *default
+    #host: 120.92.140.143
+    database: pipstat
+    username: pipstat
+    password: '<%=Rails.application.credentials.db_pro_pwd%>'
+  metedata_db:
+    <<: *default
+    #host: 120.92.140.143
+    database: metedata
+    username: pipstat
+    password: '<%=Rails.application.credentials.db_pro_pwd%>'
+    migrations_paths: db/metedata_migrate
 
-#平台基本数据
-mete_db:
-  <<: *default
-  database: metedata
+
 
 #认证库
 account_db:
@@ -47,4 +66,13 @@ account_db:
   host: 120.92.137.73
   password: '<%=Rails.application.credentials.db_account_pwd%>'
   database: account
+  port: 7002
+
+#平台基本数据
+archive_db:
+  <<: *default
+  username: pipcount
+  host: 120.92.137.73
+  password: '<%=Rails.application.credentials.db_account_pwd%>'
+  database: account_archive
   port: 7002
