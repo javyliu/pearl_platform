@@ -32,6 +32,7 @@ gem 'sidekiq'
 gem 'mini_magick', '~> 4.8'
 # gem 'image_processing', '~> 1.2'
 
+gem 'cancancan'
 gem 'role_making', '~> 0.2.0'
 
 # Reduces boot times through caching; required in config/boot.rb

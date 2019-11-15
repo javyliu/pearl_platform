@@ -1,0 +1,54 @@
+zh-CN:
+  point_rule:
+    user_registed:
+      msg: 注册成功，获得 %{points} 积分
+      points: 5
+    added_head:
+      msg: 头像添加成功，获得 %{points} 积分
+      points: 5
+    normal_authed:
+      msg: 通过了资质审核，获得 %{points} 积分
+      points: 10
+    service_authed:
+      msg: 通过了服务商资质审核，获得 %{points} 积分
+      points: 10
+    company_service_authed:
+      msg: 通过了服务商资质审核，机构获得 %{points} 积分
+      points: 10
+    user_order_completed:
+      msg: 成功完成了订单 %{order_id}，获得 %{points} 积分
+      points: 10
+    to_user_order_completed:
+      msg: 成功完成了订单 %{order_id}，获得 %{points} 积分
+      points: 10
+    company_order_completed:
+      msg: ''
+      points: 10
+    submited_comment:
+      msg: 成功提交了订单 %{order_id} 的评论，获得 %{points} 积分
+      points: 2
+    service_commented :
+      msg: 已完成订单 %{order_id} 被评论了，获得 %{points} 积分
+      points: 2
+    company_order_commented:
+      msg: ''
+      points: 0
+
+  common_replies:
+    xiufu:
+      - "您好，订单已经接受，已分配给%{name}设计师设计，5分钟内设计师会确认模型，请勿让患者离开。"
+      - "您好，%{order_no}号订单已经开始设计，预计设计时间为%{count}分"
+      - "非常抱歉，您的订单正在排版，预计开始设计时间为%{count}分钟。"
+      - "您好，%{order_no}号订单已发回，请查收。"
+      - "您好，%{name}患者咬合空间不足，保留材料最小厚度，牙齿预备量请您参考下图："
+      - "您好，%{name}患者模型文件已发回，请您确认形态。"
+      - "您好，%{name}患者桥体基牙没有共同就位道，具体位置请参考下图，建议您重新制备基牙。"
+    zhongzhi:
+      - 您好，请问是%{name}医生吗？
+      - 我是爱尔创设计平台%{name}，请问您现在有时间吗？
+      - 不好意思打扰了，您先忙，您大概什么时候有时间我再联系您？
+      - 刚刚我们这边收到了您发过来的数据，数据检查没问题我们这边开始设计，设计方案会在X天内给到您，设计好会和您联系！有一些基本信息和您沟通一下！
+      - 请问这个病例做几颗种植体？在什么牙位？
+      - 请问这个病例做什么系统的种植体？患者最终上部修复是想做哪种呢？
+      - 请问这个患者的手术时间定在几号了呢？
+      - 方便加一下您的微信吗？以便于后期的沟通！

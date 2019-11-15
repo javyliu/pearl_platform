@@ -1,0 +1,54 @@
+---
+zh-CN:
+  groups:
+    manage: '管理权限'
+    service: '服务权限'
+    user: '成员管理权限'
+    order_interact: '订单交互'
+  actions:
+    index: '展示%{res}'
+    modify: '修改%{res}'
+    view: '查看%{res}'
+    change: '管理%{res}'
+    read: "查看%{res}"
+    detail: "查看%{res}详情"
+    show: '查看详细%{res}'
+    edit: "编辑%{res}"
+    new: "新建%{res}"
+    update: "更新%{res}"
+    create: "添加%{res}"
+    destroy: "删除%{res}"
+    manage: "管理%{res}"
+    list: "%{res}列表"
+    handle: "处理%{res}"
+    display: "显示%{res}"
+    audit: "授权%{res}"
+    upload: "上传文件%{res}"
+    export: '导出%{res}'
+    kaoqing: '审批%{res}'
+    confirm: '确认%{res}'
+    approve: '确认%{res}'
+    up_state: '%{res}状态更新'
+    reply: '回复%{res}'
+    show_3d: '%{res}3D展示'
+    step: '提交%{res}'
+    person_setting: '设置%{res}'
+    admin_setting: '管理%{res}'
+    del_member: '删除%{res}'
+    invite_member: '邀请%{res}'
+    change_price: '更改%{res}价格'
+    send_to: '转发%{res}'
+  other_actions:
+    create: '同步%{res}'
+
+  admin: 系统管理员
+  manager: 管理员
+  facilitator_manager: 服务商管理员
+  facilitator_member: 服务商成员
+  badman: Badman
+  unauthorized:
+    default: "无权访问"
+  common:
+    index_icon : "<i class='fi-home'>&nbsp;</i>"
+    home : "首页"
+
