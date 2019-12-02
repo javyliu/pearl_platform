@@ -46,3 +46,10 @@ Rails.application.configure do
   # Raises error for missing translations.
   # config.action_view.raise_on_missing_translations = true
 end
+#first time
+Webdrivers.configure do |config|
+  config.proxy_addr = '192.168.0.5'
+  config.proxy_port = '1080'
+  # config.proxy_user = 'username'
+  # config.proxy_pass = 'password'
+end

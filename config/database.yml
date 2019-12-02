@@ -16,7 +16,7 @@ default: &default
   username: root
   password: '<%=Rails.application.credentials.db_dev_pwd%>'
   #host: 120.92.140.143
-  host: 192.168.30.33
+  host: 127.0.0.1
 #  socket: /data1/mysql5/data/mysql.sock
   port: 3306
 

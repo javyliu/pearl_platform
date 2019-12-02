@@ -41,7 +41,7 @@ class SessionsController < ApplicationController
     end
     @user = User.find_by("(phone=:phone or name=:phone) and state=1", phone: login_params[:phone])
     if !@msg && @user && @user.authenticate(login_params[:password])
-      flash.notice = "欢迎来到数字口腔云平台!"
+      flash.notice = "欢迎来到明珠数据平台!"
       authenticate_user(@user)
       redirect_back_or_default(@user.is_authed? ? mine_users_path : company_users_path )
     else
